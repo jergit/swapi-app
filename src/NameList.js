@@ -28,7 +28,6 @@ class NameList extends Component {
       await axios.get(apiURL).then((response) => {
         movieCharacterNames.push(response.data.name)  
         this.setState({movieCharacters:movieCharacterNames})
-        console.log(this.state.movieCharacters)
       });
     } catch (error) {
       console.error(error);
